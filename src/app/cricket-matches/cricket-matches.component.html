@@ -1,0 +1,23 @@
+<h2 class="text-center">
+  Cricket Calendar
+</h2>
+<div class="row">
+  <div class="col-md-12">
+    <div class="col-md-4 text-center border" *ngFor="let match of matches">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{ match.date | date }}</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div *ngIf="match['team-1']">{{ match['team-1'] }}</div>
+            <img src="../../assets/vs.png" alt="v/s" height="30px" width="30px">
+            <div *ngIf="match['team-2']">{{ match['team-2'] }}</div>
+          </div>
+          <div *ngIf="match.matchStarted">Match Started: <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></div>
+          <div *ngIf="!match.matchStarted">Match Started: <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
