@@ -1,0 +1,38 @@
+<h2 class="text-center">
+  Cricket Calendar
+</h2>
+<div class="row" #myGroup>
+  <div class="col-md-12">
+    <div class="col-md-4 border" *ngFor="let match of matches">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{ match.date | date }} &nbsp; <a *ngIf="match.matchStarted" class="pull-right" href="#{{match.unique_id}}" (click)="fetchScore(match.unique_id)"
+              data-toggle="collapse" data-target="#{{match.unique_id}}" aria-expanded="false" aria-controls="match.unique_id"
+              data-parent="#myGroup">Score</a></h3>
+
+        </div>
+        <div class="panel-body text-center">
+          <div class="row">
+            <div *ngIf="match['team-1']">{{ match['team-1'] }}</div>
+            <img src="../../assets/vs.png" alt="v/s" height="30px" width="30px">
+            <div *ngIf="match['team-2']">{{ match['team-2'] }}</div>
+          </div>
+          <div *ngIf="match.matchStarted">Match Started: <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></div>
+          <div *ngIf="!match.matchStarted">Match Started: <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+
+          <div class="collapse" id="{{match.unique_id}}">
+            <hr>
+            <div class="card card-block text-left">
+              <div *ngIf="score.score"><strong> Score :</strong> {{score.score}}</div>
+              <hr>
+              <div *ngIf="score['innings-requirement']"><strong>Summary </strong> : {{score['innings-requirement']}}</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

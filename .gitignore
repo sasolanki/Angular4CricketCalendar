@@ -40,3 +40,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/.vs
+/.vscode/settings.json
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/.vscode/settings.json
