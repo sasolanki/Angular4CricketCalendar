@@ -29,3 +29,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## TODO : UI Improvements
+
+If you want to contribute to this project, please utilize your UI skills to improve this. I've done very basic UI with help of Bootstrap.
