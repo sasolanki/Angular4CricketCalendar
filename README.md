@@ -1,4 +1,4 @@
-# Angular4Cricket
+# Angular4Cricket [![Build Status](https://travis-ci.org/sasolanki/Angular4CricketCalendar.svg?branch=master)](https://travis-ci.org/sasolanki/Angular4CricketCalendar)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
