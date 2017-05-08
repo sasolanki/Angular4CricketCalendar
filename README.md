@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
+## Get your API Key from cricapi
+Login/Register to http://www.cricapi.com (That's free as of now) Once you have the Key, replace <YourAPIKey> with your key in cricket.service.ts
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
